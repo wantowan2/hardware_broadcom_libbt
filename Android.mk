@@ -43,5 +43,11 @@ endif
 ifeq ($(TARGET_PRODUCT), full_wingray)
     include $(LOCAL_PATH)/conf/moto/wingray/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), aosp_flounder)
+    include $(LOCAL_PATH)/conf/htc/flounder/Android.mk
+endif
+ifeq ($(TARGET_PRODUCT), aosp_flounder_lte)
+    include $(LOCAL_PATH)/conf/htc/flounder/Android.mk
+endif
 
 endif # BOARD_HAVE_BLUETOOTH_BCM
